@@ -14,7 +14,7 @@
 | friction      | ˈfrɪkʃǝn        | 摩擦力           |
 | trigonometric | ˌtrɪɡǝnǝˈmɛtrɪk | 三角學的         |
 | piecewise     | pis waɪz        | 分段            |
-| partitioned   | pɑrˈtɪʃǝn       | 分割             |
+| partitioned   | pɑrˈtɪʃǝn       | 分割            |
 | asymptotically| еˌsɪmptɑˈtɪkḷɪ  | 漸進            |
 | equivalent    | ɪˈkwɪvǝlǝnt     | 等價            |
 | slope         | slop            | 斜率            |
@@ -23,12 +23,12 @@
 | quadratic     | kwɑdˈrætɪk      | 二次的          |
 | vertex        | ˈvɝtɛks         | 頂點            |
 | interpret     | ɪnˈtɝprɪt       | 解釋            |
-|               |                 |                 |
-|               |                 |                 |
-|               |                 |                 |
-|               |                 |                 |
-|               |                 |                 |
-|               |                 |                 |
+| plot          | plɑt            | 測定位置         |
+| arbitrary     | ˈɑrbǝˌtrɛrɪ     | 隨心所欲的       |
+| rational      | ˈræʃǝnḷ         | 有理的          |
+| numerator     | ˈnjumǝˌrеtɚ     | 分子            |
+| denominator   | dɪˈnɑmǝˌnеtɚ    | 分母            |
+| asymptote     | ˈæsɪmˌtot       | 漸近線          |
 |               |                 |                 |
 |               |                 |                 |
 |               |                 |                 |
@@ -162,4 +162,25 @@ $$
 4. graph intersects low
     * ***The number of x-axis intersections will be less than or equal to the degree of the polynomial***
     ![graph intersects low example](photos/graph%20intersects%20low.png)
-5. 
+## rational function
+* It's a function that can be constructed from a variable and a set of numbers, using addition, multiplication and **division**
+* To add them, we need to put over a common denominator
+    * example:
+        $$
+            \frac {1} {x - 2} + \frac {1} {x^2 + 2}
+            = \frac {x^2 + 2} {(x - 2)(x^2 + 2)} + \frac {x - 2} {(x - 2)(x^2 + 2)}\\
+            \quad = \frac {x^2 + x} {(x - 2)(x^2 + 2)}
+        $$
+* horizontal asymptote
+    * $R(x) = \frac {P(x)} {Q(x)}$
+
+        *$R(x)$ represents the rational function*
+
+        *$P(x)$ represents a polynomial in terms of numerator*
+
+        *$Q(x) represents an another polynomial in terms of denominator*
+    * if $degree(P) \leq degree(Q)$, we should divide by $x^{degree(Q)}$
+    * example:
+        $$
+            \frac {2x^2 + 2x - 1} {x^2 + x + 1} = \frac {2 + 2\frac {1} {x} - \frac {1} {x^2}} {1 + \frac {1} {x} + \frac {1} {x^2}}
+        $$
