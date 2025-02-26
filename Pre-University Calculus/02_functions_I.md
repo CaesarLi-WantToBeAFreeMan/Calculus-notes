@@ -15,14 +15,14 @@
 | trigonometric | ˌtrɪɡǝnǝˈmɛtrɪk | 三角學的         |
 | piecewise     | pis waɪz        | 分段            |
 | partitioned   | pɑrˈtɪʃǝn       | 分割             |
-|               |                 |                 |
-|               |                 |                 |
-|               |                 |                 |
-|               |                 |                 |
-|               |                 |                 |
-|               |                 |                 |
-|               |                 |                 |
-|               |                 |                 |
+| asymptotically| еˌsɪmptɑˈtɪkḷɪ  | 漸進            |
+| equivalent    | ɪˈkwɪvǝlǝnt     | 等價            |
+| slope         | slop            | 斜率            |
+| intercept     | ˌɪntɚˈsɛpt      | 截取            |
+| factorized    | ˈfæktəˌraɪzd    | 因數的          |
+| quadratic     | kwɑdˈrætɪk      | 二次的          |
+| vertex        | ˈvɝtɛks         | 頂點            |
+| interpret     | ɪnˈtɝprɪt       | 解釋            |
 |               |                 |                 |
 |               |                 |                 |
 |               |                 |                 |
@@ -116,3 +116,50 @@ $$
    2. count the number of intersections of the vertical line and the plane
    3. if the number is more than 1, it isn's;
       otherwise, it's
+## polynomial function
+* It's a function that can be constructed from a variable and a set of numbers, and using only additions and multiplications
+* example: $f(x) = 3x^2 + 6x - 12$
+* All the numbers before `x` are `coefficients`
+* example: for the above function, `3`, `6` and `12` are `coefficient`s
+* The highest exponents of `x` is `degree`
+* example: for the above function, `2` is `degree`
+* if the degree `x` is `much larger than (>>)` or `much less than (<<)`, the function is `asymptotically equivalent (~)` to *$a_n*x^n$*
+* formula:
+    $$
+        f(x) = a_nx^n + a_{n - 1}x^{n - 1} + \dots + a_1x + a_0\\
+            \sim a_nx^n \quad \text {{for}} \quad x \gg 0 \quad \text{{or}} \quad x \ll 0
+    $$
+* NOTES
+    1. Every constant function, like $f(X) = 3$ is one of polynomial function
+    2. The exponent of a variable in a polynomial must be a non-negative integer, and functions with negative or fractional exponents aren't polynomial functions
+## polynomial function graph
+1. degree 0
+    ![degree 0 polynomial function graph](photos/degree%200%20graph%20example.png)
+2. degree 1
+    ![degree 1 polynomial function graph](photos/degree%201%20graph%20example.png)
+3. degree 2
+    ![degree 2 polynomial function graph](photos/degree%202%20graph%20example.png)
+    a functions
+    ![degree 2 polynomial function a graph](photos/degree%202%20a%20graph%20example.png)
+    * other forms:
+        1. `factorized form`: $f(x) = a(x - p)(x - q)$
+        ![factorized form graph](photos/factorized%20form.png)
+            * ***not every polynomial can be factored***
+            * the polynomial function can be factored ***only if $b^2 - 4ac \geq 0$***
+        2. `complete-square form`: $f(x) = a(x - r)^2 + s$
+        ![complete-square from graph](photos/complete-aquare%20form.png)
+    * standard form to complete-square form:
+        $$ax^2 + bx + c = a\left(x + \frac {b} {2a}\right)^2 + c - \frac {b^2} {4a}$$
+    * standard form to factorized form
+        $$
+            ax^2 + bx + c = a(x - p)(x - q)\\
+                    \quad = a(x^2 - (p + q)x + pq)\\
+        $$
+        $$
+            p + q = -\frac {b} {a}\\
+            pq = \frac {c} {a}
+        $$
+4. graph intersects low
+    * ***The number of x-axis intersections will be less than or equal to the degree of the polynomial***
+    ![graph intersects low example](photos/graph%20intersects%20low.png)
+5. 
