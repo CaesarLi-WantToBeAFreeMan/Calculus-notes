@@ -1,8 +1,8 @@
-# Course #1: Introduction
+# week #0: Introduction
 
 # Platform: Edx
 
-# Teacher: DelftX Calc001x
+# Course Name: DelftX Calc001x: Pre-University Calculus
 
 ## unknown kaywords:
 | english                             | phonetic symbol       | chinese meaning  |
