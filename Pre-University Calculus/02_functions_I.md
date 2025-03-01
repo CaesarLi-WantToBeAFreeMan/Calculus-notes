@@ -95,28 +95,35 @@
     * formula
         $$f(x) = \lfloor x \rfloor$$
     * graph
+
         ![floor function graph example](photos/floor%20function%20graph%20example.png)
+
     * table
-        * | x    | floor(x)  |
-        * | :-:  | :-------: |
-        * | -1   | -1        |
-        * | -0.5 | -1        |
-        * | 0    | 0         |
-        * | 0.5  | 0         |
-        * | 1    | 1         |
+
+        | x    | floor(x)  |
+        | :--: | :-------: |
+        | -1   | -1        |
+        | -0.5 | -1        |
+        | 0    | 0         |
+        | 0.5  | 0         |
+        | 1    | 1         |
+
 2. `ceiling function`
     * formula
         $$f(x) = \lceil x \rceil$$
     * graph
+
         ![ceiling function graph example](photos/ceiling%20function%20graph%20example.png)
+
     * table
-        * | x      | ceiling(x)   |
-        * | :----: | :---------:  |
-        * | -1     | -1           |
-        * | -0.5   | 0            |
-        * | 0      | 0            |
-        * | 0.5    | 1            |
-        * | 1      | 1            |
+
+        | x      | ceiling(x)   |
+        | :----: | :---------:  |
+        | -1     | -1           |
+        | -0.5   | 0            |
+        | 0      | 0            |
+        | 0.5    | 1            |
+        | 1      | 1            |
 
 ## piecewise function
 
@@ -156,7 +163,7 @@ $$
 * example: for the above function, `3`, `6` and `12` are `coefficient`s
 * The highest exponents of `x` is `degree`
 * example: for the above function, `2` is `degree`
-* if the degree `x` is `much larger than (>>)` or `much less than (<<)`, the function is `asymptotically equivalent (~)` to *$a_n*x^n$*
+* if the degree `x` is `much larger than (>>)` or `much less than (<<)`, the function is `asymptotically equivalent (~)` to $a_n*x^n$
 * formula:
     $$
         f(x) = a_nx^n + a_{n - 1}x^{n - 1} + \dots + a_1x + a_0\\
@@ -180,7 +187,7 @@ $$
         1. `factorized form`: $f(x) = a(x - p)(x - q)$
         ![factorized form graph](photos/factorized%20form.png)
             * ***not every polynomial can be factored***
-            * the polynomial function can be factored ***only if $b^2 - 4ac \geq 0$***
+            * the polynomial function can be factored ***only if*** $b^2 - 4ac \geq 0$
         2. `complete-square form`: $f(x) = a(x - r)^2 + s$
         ![complete-square from graph](photos/complete-aquare%20form.png)
     * standard form to complete-square form:
@@ -211,16 +218,20 @@ $$
 ### horizontal asymptote
 * $R(x) = \frac {P(x)} {Q(x)}$
 
-    *$R(x)$ represents the rational function*
+    * $R(x)$ represents the rational function
 
-    *$P(x)$ represents a polynomial in terms of numerator*
+    * $P(x)$ represents a polynomial in terms of numerator
 
-    *$Q(x) represents an another polynomial in terms of denominator*
+    * $Q(x) represents an another polynomial in terms of denominator
 * If $degree(P) \leq degree(Q)$, we should divide by $x^{degree(Q)}$
 * example:
     $$
-        \frac {2x^2 + 2x - 1} {x^2 + x + 1} = \frac {2 + 2\frac {1} {x} - \frac {1} {x^2}} {1 + \frac {1} {x} + \frac {1} {x^2}}\\
-        \sim \frac {2} {1} \quad \text {for large x}\\
+        \frac {2x^2 + 2x - 1} {x^2 + x + 1} = \frac {2 + 2\frac {1} {x} - \frac {1} {x^2}} {1 + \frac {1} {x} + \frac {1} {x^2}}
+    $$
+    $$
+        \sim \frac {2} {1} \quad \text {for large x}
+    $$
+    $$
         = 2
     $$
 * Then the horizontal asymptote is $y = 2$
@@ -228,9 +239,15 @@ $$
 * It can only occur at $Q(x) = 0$ and $P(x) \neq 0$
 * example:
     $$
-        f(x) = \frac {1} {x - 2}\\
-        Q(x) = x - 2\\
-        Q(2) = 0\\
+        f(x) = \frac {1} {x - 2}
+    $$
+    $$
+        Q(x) = x - 2
+    $$
+    $$
+        Q(2) = 0
+    $$
+    $$
         P(x) \neq 0
     $$
 * Then the vertical asymptote is $x = 2$
@@ -240,7 +257,9 @@ $$
 * As long as we solve a rational function $\sim$ 0, we can identify the corresponding polynomial function as an oblique asymptote
 ### zeros of rational functions
 $$
-    \frac {P(x)} {Q(x)} = 0 \quad whenever\\
+    \frac {P(x)} {Q(x)} = 0 \quad whenever
+$$
+$$
     P(x) = 0 \quad and \quad Q(x) \neq 0
 $$
 
@@ -317,8 +336,8 @@ $$T_n(x) = \sum_{k = 0}^{n} \frac {f^{(k)}(a)} {k!} (x - a)^k$$
 * example: $f(x) = \sqrt {1 + x}$ and $x = 0$
 $$f_0(0) = \frac {f(0)} {0!} = \frac {(1 + 0)^{\frac {1} {2}}} {0!} = 1$$
 $$f_1(0) = \frac {f^{'}(0)} {1!} = \frac {\frac {1} {2}(1 + 0)^{-\frac {1} {2}}} {1!} = \frac {1} {2}x$$
-$$f_2(0) = \frac {f^{''}(0)} {2!} = \frac {-\frac {1} {4}(1 + 0)^{-\frac {3} {2}}} {2!} = -\frac {1} {8}x$$
-$$f_3(0) = \frac {f^{(3)}(0)} {3!} = \frac {\frac {3} {8}(1 + 0)^{-\frac {5} {2}}} {3!} = \frac {1} {16}x$$
+$$f_2(0) = \frac {f^{''}(0)} {2!} = \frac {-\frac {1} {4}(1 + 0)^{-\frac {3} {2}}} {2!} = -\frac {1} {8}x^2$$
+$$f_3(0) = \frac {f^{(3)}(0)} {3!} = \frac {\frac {3} {8}(1 + 0)^{-\frac {5} {2}}} {3!} = \frac {1} {16}x^3$$
 $$.$$
 $$.$$
 $$.$$
