@@ -4,7 +4,7 @@
 
 # Course Name: DelftX Calc001x: Pre-University Calculus
 
-## unknown kaywords:
+## unknown keywords:
 | english       | phonetic symbol | chinese meaning |
 | :-----------: | :-------------: | :-------------: |
 | domain        | doˈmеn          | 定義域           |
@@ -52,6 +52,7 @@
 | nozzle        | ˈnɑzḷ           | 嘴              |
 
 ## unknown abbreviations:
+
 | abbreviation  | full name         | chinese meaning |
 | :-----------: | :---------------: | :-------------: |
 | LHS           | Left-Hand Side    | 左側的式子       |

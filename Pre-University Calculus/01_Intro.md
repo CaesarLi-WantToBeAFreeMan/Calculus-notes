@@ -4,7 +4,7 @@
 
 # Course Name: DelftX Calc001x: Pre-University Calculus
 
-## unknown kaywords:
+## unknown keywords:
 | english                             | phonetic symbol       | chinese meaning  |
 | :---------------------------------: | :-------------------: | :-------------:  |
 | calculus                            | ˈkælkjǝlǝs            | 微積分            |
