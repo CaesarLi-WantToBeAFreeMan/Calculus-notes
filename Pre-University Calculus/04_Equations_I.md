@@ -11,7 +11,17 @@
 | proton        | ˈprotɑn         | 質子             |
 | therapy       | ˈθɛrǝpɪ         | 療法            |
 | discriminant  | dɪˈskrɪmənənt   | 判別式          |
+| substitution  | ˌsʌbstǝˈtjuʃǝn  | 代換            |
+| sophisticated | sǝˈfɪstɪˌkеtɪd  | 複雜的          |
+| whereas       | hwɛrˈæz         | 反之            |
+| inequality    | ɪnɪˈkwɑlǝtɪ     | 不等式          |
+| arch          | ɑrtʃ            | 拱門            |
 
+## unknown phrases
+
+| english       | phonetic symbol   | chinese meaning   |
+| :-----------: | :---------------: | :---------------: |
+| vice versa    | ˌvaɪs ˈvɚsə       | 反之亦然          |
 
 ## polynomial functions
 
@@ -94,3 +104,36 @@
     3. check results
         $$\frac {2\sqrt{3}} {2\sqrt{3} - 2} + \frac {2\sqrt{3}} {2\sqrt{3} + 2} = 3$$
         $$\frac {-2\sqrt{3}} {-2\sqrt{3} - 2} + \frac {-2\sqrt{3}} {-2\sqrt{3} + 2} = 3$$
+
+## strategies of simplifying
+
+### 1. balanced method
+* performing the same operation on both the left and right sides, e.g., addition, subtraction, multiplication, division, exponentiation, root operations, etc
+### 2. factorization
+* factorizing an expression, such as factorizing $x^2 + 2x - 15 = 0$ into $(x - 3)(x + 5) = 0$
+### 3. substitution
+* for $x^6 - 3x^3 - 4 = 0$, we can substitute $y = x^3$, and then simplify the expression as $y^2 - 3x - 4 = 0$
+
+## complex numbers
+
+### definition
+* `i` is an **imaginary** number such that $i^2 = -1$
+* `z = x + yi` with `x` and `y`  real is called `complex number`
+* `x = Rez` is called the `real part` of `z`
+* `y = Imz` is called the `imaginary part` of `z`
+### calculation rules
+1. addition
+    $$(x_1 + y_1i) + (x_2 + y_2i) =$$
+    $$[x_1 + x_2 + (y_1 + y_2)i]$$
+2. subtraction
+    $$(x_1 + y_1i) - (x_2 + y_2i) =$$
+    $$[x_1 - x_2 + (y_1 - y_2)i]$$
+3. multiplication
+    $$(x_1 + y_1i)(x_2 + y_2i) =$$
+    $$x_1 \times x_2 + (x_1 \times y_2)i + (y_1 \times x_2)i + (y_1 \times y_2)i^2 =$$
+    $$[x_1 \times x_2 - (y_1 \times y_2) + (x_1 \times y_2 + y_1 \times x_2)i]$$
+4. division
+    $$\frac {x_1 + y_1i} {x_2 + y_2i} =$$
+    $$\frac {x_1 + y_1i} {x_2 + y_2i} \times \frac {x_2 + -y_2i} {x_2 + -y_2i} =$$
+    $$\frac {x_1 \times x_2 - (x_1 \times y_2)i + (y_1 \times x_2)i - (x_2 \times y_2)i^2} {2_1^2 - (y_2i)^2} =$$
+    $$\frac {x_1 \times x_2 + y_1 \times y_2} {x_2^2 + y_2^2} + \frac {y_1 \times x_2 - x_1 \times y_2} {x_2^2 + y_2^2}i
