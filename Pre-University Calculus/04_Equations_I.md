@@ -1,4 +1,4 @@
-# Course #3: Functions Part II
+# Course #4: Equation Part I
 
 # Platform: Edx
 

@@ -49,6 +49,7 @@
 ## unknown abbreviations:
 
 | abbreviation  | full name         | chinese meaning |
+| :-----------: | :---------------: | :-------------: |
 | hyp           | hypotenuse        | 斜邊             |
 | opp           | opposite          | 對邊             |
 | adj           | adjacent          | 鄰邊             |
