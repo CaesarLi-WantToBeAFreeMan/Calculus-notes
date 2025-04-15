@@ -4,9 +4,11 @@
 
 # Course Name: DelftX Calc001x: Pre-University Calculus
 
-## unknown keywords
+# Author: Caesar James LEE
 
-| english           | phonetic symbol   | chinese meaning |
+## Unknown Keywords
+
+| English           | Pronunciation     | Chinese Meaning |
 | :---------------: | :---------------: | :-------------: |
 | geometry          | dʒɪˈɑmǝtrɪ        | 幾何學           |
 | projection        | prǝˈdʒɛkʃǝn       | 投影             |
@@ -34,9 +36,9 @@
 | equidistance      | ˈikwɪˈdɪstṇs      | 等距離          |
 | bisector          | baɪˈsɛktɚ         | 二等分線        |
 
-## Cartesian coordinate
+## Cartesian Coordinate
 
-![cartesian coordinate system](photos/cartesian%20coordinate%20system.png)
+![cartesian coordinate system](photos/week%208/08-01.png)
 
 ### D(dimension)
 * 0D: a `point`, **has no length, width, or height**
@@ -44,29 +46,29 @@
 * 2D: a `plane`, **has both length and width, but no thickness**
 * 3D: a `space`, **has length, width and height(depth)**
 
-### coordinate
+### Coordinate
 1. 2D
     * `(x, y)`
-    * two axes: `x-axis` and `y-axis`
+    * Two axes: `x-axis` and `y-axis`
     * `x-axis` (**horizontal**): how far **left(negative) or right(positive)**
     * `y-axis` (**vertical**): how far **up(positive) or down(negative)**
 2. 3D
     * `(x, y, z)`
-    * three axes: `x-axis`, `y-axis` and `z-axis`
-    * add a z-axis (**depth**): how far **out(positive) or in(negative)**
-3. origin
-    * a point where all axes meet
+    * Three axes: `x-axis`, `y-axis` and `z-axis`
+    * Add a z-axis (**depth**): how far **out(positive) or in(negative)**
+3. Origin
+    * A point where all axes meet
     * 2D: `(0, 0)`
     * 3D: `(0, 0, 0)`
 
-### rotation formula
-* to rotate a point (x, y) around the origin by an angle $\theta$, and the rotates the point **counterclockwise** by $\theta$ degrees
-* formula
-    * rotated point: `(x', y')`
-    * original point: `(x, y)`
+### Rotation Formula
+* To rotate a point (x, y) around the origin by an angle $\theta$, and the rotates the point **counterclockwise** by $\theta$ degrees
+* Formula
+    * Rotated point: `(x', y')`
+    * Original point: `(x, y)`
     $$x' = x \times \cos(\theta) - y \times \sin(\theta)$$
     $$y' = x \times \sin(\theta) + y \times \cos(\theta)$$
-    * matrix format
+    * Matrix format
     $$
     \begin{bmatrix}
     x'\\
@@ -84,27 +86,28 @@
     \end{bmatrix}
     $$
 
-### distance
-* photo
+### Distance
+* Photo
 
-![distance formula](photos/distance%20formula.png)
-* formulas
+![distance formula](photos/week%208/08-02.png)
+
+* Formulas
     $$d = \sqrt{\Delta x^2 + \Delta y^2}$$
     $$= \sqrt{\lvert x1 - x2\rvert^2 + \lvert y1 - y2\rvert^2}$$
 
-## vectors
+## Vectors
 
-### definition
-* a vector shows how far and in what direction to go from a point to another
-* a vector has two pieces of information:
-    1. direction
-    2. magnitude(length)
+### Definition
+* A vector shows how far and in what direction to go from a point to another
+* A vector has two pieces of information:
+    1. Direction
+    2. Magnitude(length)
 
-### notations
-1. `arrow notation`, **BEST**:
-    * from point `A` to point `B`:
+### Notations
+1. `Arrow notation`, **BEST**:
+    * From point `A` to point `B`:
         $$\vec{AB}$$
-    * from point `(1, 2)` to point `(3, 4)`
+    * From point `(1, 2)` to point `(3, 4)`
         $$\vec{V} =
         \begin{pmatrix}
         3 - 1\\
@@ -115,10 +118,10 @@
         2\\
         2
         \end{pmatrix}$$
-2. `bold font`:
-    * from point `A` to point `B`: 
+2. `Bold font`:
+    * From point `A` to point `B`: 
         $$\boldsymbol{V} = \vec{AB}$$
-    * from point `(1, 2)` to point `(3, 4)`
+    * From point `(1, 2)` to point `(3, 4)`
         $$\boldsymbol{V} = 
         \begin{pmatrix}
         3 - 1\\
@@ -131,21 +134,21 @@
         \end{pmatrix}
         $$
     * You should definite a vector to use
-3. `component form`:
-    * from point `A` to point `B`:
+3. `Component form`:
+    * From point `A` to point `B`:
         $$\langle B_x - A_x, B_y - A_y \rangle$$
-    * from point `(1, 2)` to point `(3, 4)`
+    * From point `(1, 2)` to point `(3, 4)`
         $$\langle 3 - 1, 4 - 2 \rangle = \langle 2, 2 \rangle$$
     * This only contain values, but name
-4. `column vector`
-    * from point `A` to point `B`:
+4. `Column vector`
+    * From point `A` to point `B`:
         $$
         \begin{bmatrix}
         B_x - A_x\\
         B_y - A_y
         \end{bmatrix}
         $$
-    * from point `(1, 2)` to point `(3, 4)`
+    * From point `(1, 2)` to point `(3, 4)`
         $$
         \begin{bmatrix}
         3 - 1\\
@@ -159,48 +162,51 @@
         $$
     * This only contain values, but name
 
-### zero vector $\vec{0}$
+### Zero Vector $\vec{0}$
 * $\vec{0}$ has
-    1. zero length
-    2. no direction
+    1. Zero length
+    2. No direction
 
-### magnitude (length) of a vector
-* using a Pythagorean theorem
-* formula
+### Magnitude (Length) of A Vector
+* Using a Pythagorean theorem
+* Formula
     $$\| \vec{V} \| = \sqrt{V_x^2 + V_y^2}$$
-* example: $\vec{V} = \begin{pmatrix} 3\\4 \end{pmatrix}$
+* Example: $\vec{V} = \begin{pmatrix} 3\\4 \end{pmatrix}$
     $$\| \vec{V} \| = \sqrt{3^2 + 4^2} = 5$$
 
-### calculation rules
-1. addition
-    * photo
+### Calculation Rules
+1. Addition
+    * Photo
 
-    ![addition of vectors](photos/addition%20of%20vectors.png)
+    ![addition of vectors](photos/week%208/08-03.png)
+
     * $$\vec{AB} + \vec{BC} = \vec{AC}$$
-    * the new vector is from the first vector's head to the second vector 's toe
+    * The new vector is from the first vector's head to the second vector 's toe
     * $$\vec{u} + \vec{v} = \langle u_x + v_x, u_y + v_y\rangle$$
-2. subtraction
+2. Subtraction
     * $$\vec{AB} - \vec{AC} = \vec{CB}$$
-3. multiplication
-    * photo
+3. Multiplication
+    * Photo
 
-    ![multiplication of vectors](photos/multiplication%20of%20vectors.png)
-    * for $\vec{v} \times c$
-    1. for `c > 0`
-        1. direction doesn't change
-        2. length multiplied by c
-    2. for `c < 0`
-        1. direction is opposite of $\vec{v}$
-        2. length multiplied by $\lvert c \rvert$
-4. scalar multiplication
+    ![multiplication of vectors](photos/week%208/08-04.png)
+
+    * For $\vec{v} \times c$
+    1. For `c > 0`
+        1. Direction doesn't change
+        2. Length multiplied by c
+    2. For `c < 0`
+        1. Direction is opposite of $\vec{v}$
+        2. Length multiplied by $\lvert c \rvert$
+4. Scalar multiplication
     * $$k \vec{v} = \langle kv_x, kv_y \rangle$$
-5. dot product
-    * photo
+5. Dot product
+    * Photo
 
-    ![dot product](photos/dot%20product%20example.png)
-    * geometric formula
+    ![dot product](photos/week%208/08-05.png)
+
+    * Geometric Formula
     $$\vec{V} \cdot \vec{W} = \| \vec{V} \| \cdot \| \vec{W} \| \cdot \cos(\alpha)$$
-    * algebraic formula
+    * Algebraic Formula
         $$
         \begin{pmatrix}
         2\\
@@ -214,46 +220,47 @@
         =
         2 \cdot 1 + 3 \cdot (-1) = -1
         $$
-    * types of angle
-        * the angle is $[0, \pi]$ in radians, or $[0 \degree, 180 \degree]$ in degree
+    * Types of Angle
+        * The angle is $[0, \pi]$ in radians, or $[0 \degree, 180 \degree]$ in degree
         1. $\vec{V} \cdot \vec{W} < 0$
-            * the angle is an obtuse angle
-            * or $(\frac {\pi} {2}, \pi]$ in radians
-            * or $(90 \degree, 180 \degree]$ in degree
+            * The angle is an obtuse angle
+            * Or $(\frac {\pi} {2}, \pi]$ in radians
+            * Or $(90 \degree, 180 \degree]$ in degree
         2. $\vec{V} \cdot \vec{W} > 0$
-            * the angle is an acute angle
-            * or $[0, \frac {\pi} {2})$ in radians
-            * or $[0 \degree, 90 \degree)$ in degree
+            * The angle is an acute angle
+            * Or $[0, \frac {\pi} {2})$ in radians
+            * Or $[0 \degree, 90 \degree)$ in degree
         3. $\vec{V} \cdot \vec{W} = 0$
-            * the angle is a right angle
-            * or $\frac {\pi} {2}$ in radians
-            * or $90 \degree$ in degree
-    * calculation rules
-        1. `commutativity`
+            * The angle is a right angle
+            * Or $\frac {\pi} {2}$ in radians
+            * Or $90 \degree$ in degree
+    * Calculation Rules
+        1. `Commutativity`
             * $$\vec{V} \cdot \vec{W} = \vec{W} \cdot \vec{V}$$
-        2. `distributivity`
+        2. `Distributivity`
             * $$\vec{U} \cdot (\vec{V} + \vec{W}) = \vec{U} \cdot \vec{V} + \vec{U} \cdot \vec{W}$$
-        3. scalar rule
+        3. Scalar Rule
             * `c` is a scalar
             * $$(c \vec{V}) \cdot \vec{W} = \vec{V} \cdot (c \vec{W}) = c \cdot (\vec{V} \cdot \vec{W})$$
-        4. zero vector rule
-            * if $\vec{V} \cdot \vec{V} = 0$, then $\vec{V} = \vec{0}$
-    * warnings
+        4. Zero Vector Rule
+            * If $\vec{V} \cdot \vec{V} = 0$, then $\vec{V} = \vec{0}$
+    * Warnings
         1. $\vec{U} \cdot \vec{V} \cdot \vec{W}$ is **not defined**
         2. $\vec{V}^2$ is **not defined**, always write $\vec{V} \cdot \vec{V}$ or $\| \vec{V} \| ^2$ instead
 
-## projection
+## Projection
 
-### definition
-* photo
+### Definition
+* Photo
 
-    ![projection example](photos/projection.png)
+    ![projection example](photos/week%208/08-06.png)
+
 * $\vec{OP}$ is the projection of $\vec{W}$ and $\vec{V}$
-* formulas
+* Formulas
     1. $$\vec{OP} \parallel \vec{V} \Rightarrow \vec{OP} =c \vec{V}$$
     2. $$\vec{PW} \perp \vec{V} \Rightarrow \vec{PW} \cdot \vec{V} = 0$$
     3. $$\vec{OP} = \frac {\vec{W} \cdot \vec{V}} {\vec{V} \cdot \vec{V}} \vec{V}$$
-        * proof
+        * Proof
         $$
         \vec{PW} = \vec{OW} - \vec{OP}\\
         = \vec{W} - c \cdot \vec{V}\\
@@ -265,7 +272,7 @@
         \vec{OP} = \frac{\vec{W} \cdot \vec{V}} {\vec{V} \cdot \vec{V}} \vec{V}
         $$
     4. $$\cos(\alpha) = \frac {\vec{V} \cdot \vec{W}} {\| \vec{V} \| \| \vec{W} \|}$$
-        * proof
+        * Proof
         $$
         \cos(\alpha) = \frac {\| \vec{P} \|} {\| \vec{W} \|}\\
         = \frac {\| \frac {\vec{V} \cdot {\vec{W}}} {\vec{V} \cdot \vec{V}} \vec{V} \|} {\| \vec{W} \|}\\
@@ -274,48 +281,50 @@
         = \frac {\vec{V} \cdot \vec{W}} {\| \vec{V} \| \| \vec{W} \|}
         $$
 
-## circle
+## Circle
 
-### definition
-* a shape consisting all points in a plane that are given a distance (`radius`) from a given point (`center`) 
-* photo
+### Definition
+* A shape consisting all points in a plane that are given a distance (`radius`) from a given point (`center`) 
+* Photo
 
-![circle example](photos/circle%20example.png)
-### equations
-1. standard equation
+![circle example](photos/week%208/08-07.png)
+
+### Equations
+1. Standard Equation
     $$(x - a)^2 + (y - b)^2 = r^2$$
-    * where
+    * Where
         1. $(x, y)$: any point on the circle satisfies this equation
         2. $(a, b)$: center
         3. $r$: radius
-2. general form
+2. General Form
     $$x^2 + y^2 + Dx + Ey + F = 0$$
-    * to find the center and radius from the general form of a circle, we complete the square to convert it into the standard form
-3. parametric form
+    * To find the center and radius from the general form of a circle, we complete the square to convert it into the standard form
+3. Parametric Form
     $$x = h + r \cos(\theta)\\y = k + r \sin(\theta)$$
-    * where
+    * Where
         1. $\theta \in [0, 2 \pi]$
         2. $(h, k)$: center
         3. $r$: radius
 
-## line
+## Line
 
-### vector equation
+### Vector Equation
 $$\vec{r} = \vec{a} + \lambda \vec{b}$$
-* where
+* Where
     1. $\vec{r}$ is the position vector of any point on the line
     2. $\vec{a}$ is a fixed point on the line (starting point)
     3. $\vec{b}$ is the normal vector of the line
     4. $t$ is a real number parameter
-* normal vector
-    * line: $Ax + By + C = 0$
-    * normal vector: $\begin{pmatrix} A\\ B\end{pmatrix}$
-### line segment
-* we can divide the line into two parts
-* photo
+* Normal Vector
+    * Line: $Ax + By + C = 0$
+    * Normal vector: $\begin{pmatrix} A\\ B\end{pmatrix}$
+### Line Segment
+* We can divide the line into two parts
+* Photo
 
-![line segment](photos/line%20segment%20example.png)
-* formula
+![line segment](photos/week%208/08-08.png)
+
+* Formula
     $$
     \vec{AP} = t \vec{AB}\\
     = \begin{pmatrix}
@@ -323,11 +332,11 @@ $$\vec{r} = \vec{a} + \lambda \vec{b}$$
     -5t \end{pmatrix}\\ P(2 + 3t, 4 - 5t)
     $$
 
-## velocity and acceleration
+## Velocity And Acceleration
 
-* velocity has a direction, it's a vector: $\vec{v}$
-* speed is just a magnitude, it's a magnitude of a vector: $\| \vec{v} \|$
-* velocity at time t:
+* Velocity has a direction, it's a vector: $\vec{v}$
+* Speed is just a magnitude, it's a magnitude of a vector: $\| \vec{v} \|$
+* Velocity at time t:
 $$
 \vec{v}(t) = \lim_{\Delta t \rightarrow 0}\vec{v}_{average}\\
 = \lim_{\Delta t \rightarrow 0} \frac
@@ -346,7 +355,7 @@ x'(t)\\
 y'(t)
 \end{pmatrix}
 $$
-* speed at time t:
+* Speed at time t:
 $$\| \vec{v} \| = \sqrt{(x'(t))^2 + (y'(t))^2}$$
 * acceleration at time t:
 $$\vec{a}(t) = \vec{v}'(t)\\
@@ -365,4 +374,4 @@ y''(t)
     z
     \end{pmatrix}
     $$
-* all the basic calculation rules for 2D vectors (like addition, subtraction, scalar multiplication, dot product) also apply in 3D, just with the z-component added:
+* All the basic calculation rules for 2D vectors (like addition, subtraction, scalar multiplication, dot product) also apply in 3D, just with the z-component added:

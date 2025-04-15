@@ -4,9 +4,11 @@
 
 # Course Name: DelftX Calc001x: Pre-University Calculus
 
-## unknown keywords
+# Author: Caesar James LEE
 
-| english           | phonetic symbol   | chinese meaning |
+## Unknown Keywords
+
+| English           | Pronunciation     | Chinese Meaning |
 | :---------------: | :---------------: | :-------------: |
 | differentiation   | ˌdɪfǝˌrɛnʃɪˈеʃǝn  | 微分            |
 | derivative        | dǝˈrɪvǝtɪv        | 導數            |
@@ -29,51 +31,52 @@
 | proportional      | prǝˈporʃǝnḷ       | 成常比的        |
 
  
-## unknown phrases
-| english           | phonetic symbol   | chinese meaning   |
+## Unknown Phrases
+
+| Phrase            | Pronunciation     | Chinese Meaning   |
 | :---------------: | :---------------: | :---------------: |
 | roller coaster    | ˈrolɚ ˈkostɚ      | 雲霄飛車          |
 
-## examples of limit
+## Examples of Limit
 
-### 1. instantaneous velocity
+### 1. Instantaneous Velocity
 * Refers to the distance traveled in a very short time
-* formula:
+* Formula:
 $$\lim_{\Delta t \rightarrow 0} \frac {\Delta x} {\Delta t}$$
-### 2. slope
+### 2. Slope
 * Refers to the direction of the line on a plane
-* formula:
+* Formula:
 $$\lim_{\Delta x \rightarrow 0} \frac {\Delta y} {\Delta x}$$
 
-## differentiation
+## Differentiation
 
-### definition
+### Definition
 * Refers to the local variation of a function
 * It's a difference quotient
-* formula:
+* Formula:
 $$\frac {f(a + \Delta x) - f(x)} {\Delta x}$$
 
-## derivation
+## Derivation
 
-### definition
-* calculating the slope of a single-variable function's tangent line, which is the best liner approximation of the function near that input value, at the point on the graph of the function
+### Definition
+* Calculating the slope of a single-variable function's tangent line, which is the best liner approximation of the function near that input value, at the point on the graph of the function
 
-### formula
+### Formula
 $$\lim_{\Delta x \rightarrow 0} \frac {f(a + \Delta x) - f(a)} {\Delta x}$$
 
-### notation
+### Notation
 * for $f(a)$
     1. $f'(a)$
     2. $\frac {d} {dx}(a)$
 
-## relationship between differentiation and derivation
+## Relationship Between Differentiation And Derivation
 
-***differentiation is an act of calculating a derivation
+***Differentiation is an act of calculating a derivation***
 
-## derivative rules
+## Derivative Rules
 
-### basic standard derivatives
-| standard function                     | derivative                                    |
+### Basic Standard Derivatives
+| Standard Function                     | Derivative                                    |
 | :-----------------------------------: | :-------------------------------------------: |
 | ***BASIC***                           | ***BASIC***                                   |
 | $a$                                   | $0$                                           |
@@ -109,46 +112,52 @@ $$\lim_{\Delta x \rightarrow 0} \frac {f(a + \Delta x) - f(a)} {\Delta x}$$
 | $\frac {f(x)} {g(x)}$ | $\frac {f'(x)g(x) - f(x)g'(x)} {g(x)^2}$  |
 | $f(g(x))$             | $f'(g(x))g'(x)$                           |
 
-## tangent lines
+## Tangent Lines
 
-### properties
-1. slope: $f'(p) = \tan(\theta)$, $\theta$ is a intersect between the tangent line and the positive x-axis
-2. through $(p, f(p))$
-3. the directive, representing the slope of the tangent line, exists even at an angel of 0 radians where the tangent function equals to 0, indicating a horizontal tangent line
+### Properties
+1. Slope: $f'(p) = \tan(\theta)$, $\theta$ is a intersect between the tangent line and the positive x-axis
+2. Through $(p, f(p))$
+3. The directive, representing the slope of the tangent line, exists even at an angel of 0 radians where the tangent function equals to 0, indicating a horizontal tangent line
 
-### tangent line equation
+### Tangent Line Equation
 $$f'(p) = \frac {y - f(p)} {x - p}$$
 $$y = f'(p)(x - p) + f(p)$$
 
-### solving strategy
-1. solve the point(a, b)
-2. solve the directive value $f'(a)$
-3. solve the equation $\frac {y - b} {x - a} = f'(a)$
+### Solving Strategy
+1. Solve the point(a, b)
+2. Solve the directive value $f'(a)$
+3. Solve the equation $\frac {y - b} {x - a} = f'(a)$
 
-## minima and maxima
+## Minima And Maxima
 
-### global minimum and maximum
-* the minimum and maximum in the whole function
+### Global Minimum And Maximum
+* The minimum and maximum in the whole function
 
-### extremum (local minimum and maximum)
-* the minimum and maximum in a given range in the function
+### Extremum (local minimum and maximum)
+* The minimum and maximum in a given range in the function
 
-### find extremum
-find
-1. critical points: $f'(x) = 0$
-2. singular points: $f'(x)$ doesn't exist
-3. boundary points
+### Find Extremum
+Find
+1. Critical points: $f'(x) = 0$
+2. Singular points: $f'(x)$ doesn't exist
+3. Boundary points
 
-## differentiable functions
+## Differentiable Functions
 
 * A function whose derivative exists at each point in its domain
-* A function is not differentiable at x = a when
-    1. the function is discontinuous at x = a
-    ![discontinuous function example](photos/discontinuous%20functions%20example.png)
-    2. the graph of the function has a kink at x = a
-    ![a function has a kink](photos/kink%20function%20example.png)
-    3. the graph of the function has a vertical tangent line at x = a
-    ![vertical tangent line example](photos/vertical%20tangent%20line%20function%20example.png)
+* A function is not differentiable at `x = a` when
+    1. The function is discontinuous at `x = a`
+
+    ![discontinuous function](photos/week%206/06-01.png)
+
+    2. the graph of the function has a kink at `x = a`
+
+    ![a function has a kink](photos/week%206/06-02.png)
+
+    3. the graph of the function has a vertical tangent line at `x = a`
+
+    ![vertical tangent line](photos/week%206/06-03.png)
+
 * examples:
 1. $$f(x) = x^2$$
 2. $$f(x) = \sin(x)$$
