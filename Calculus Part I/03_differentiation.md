@@ -1,0 +1,12 @@
+# Course #3: Differentiation
+
+# Platform: Edx
+
+# Course Name: DelftX MMFEC1X: Calculus I: From Functions to Differential Equations
+
+# Author: Caesar James LEE
+
+## Unknown Keywords
+
+| English           | Pronunciation     | Chinese Meaning            |
+| :---------------: | :---------------: | :------------------------: |
