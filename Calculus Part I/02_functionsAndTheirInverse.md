@@ -20,8 +20,36 @@
     * other names
         1. `output value f(x)`: `function value`
         2. `input value x`: `value of the variable`
-    * `domain`
-        * all the possible input values
+* for $f(x) = x^2$, we can say `3 has image of 9` or `3 is mapped to 9`
+
+### `domain`, `codomain` and `range`
+
+* a function $f: A \rightarrow B$ is a rule that assigns to each element `x` in the set `A`, a **unique** element `f(x)` in the set `B`
+
+#### `domain`
+* set `A` of all possible input values
+
+#### `codomain`
+* set `B`
+
+#### `range`
+* range `R` of a function $f: A \rightarrow B$ is the set of all possible values of `f(x)` as `x` varies throughout the domain `A`
+* $$R = \{f(x) \mid x \in A\}$$
+
+#### `maximal domain`
+
+* `maximal domain` of `f(x)` consists of all real numbers `x` for which the value `f(x)` is real number
+* in other words, `maximal domain` is a domain that consists all possible input values
+
+#### differences table
+* for the function $f(x) = \frac {1} {x^2}$
+
+| set               | values                                |
+| :---------------: | :-----------------------------------: |
+| `domain`          | $\{x \in \mathbb{R} \mid x \neq 0\}$  |
+| `maximal domain`  | $\{x \in \mathbb{R} \mid x \neq 0\}$  |
+| `codomain`        | $[0, \infty)$                         |
+| `range`           | $(0, \infty)$                         |
 
 ## graphs
 
