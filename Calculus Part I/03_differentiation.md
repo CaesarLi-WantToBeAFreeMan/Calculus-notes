@@ -16,6 +16,8 @@
 | scenario          | sɪˈnɛrɪˌo         | 方案；情況                  |
 | implicit          | ɪmˈplɪsɪt         | 含蓄的；內含的；隱式的       |
 | explicit          | ɪkˈsplɪsɪt        | 詳盡的；直率的；顯式的       |
+| neat              | nit               | 整潔的；熟練的；光滑的       |
+| differential      | ˌdɪfǝˈrɛnʃǝl      | 差別的；獨特的；微分的       |
 
 ## derivatives
 
@@ -75,11 +77,15 @@ $$y = f(a) + f'(a)(x - a)$$
 | ***TRIGONOMETRIC***                   | ***TRIGONOMETRIC***                           |
 | $\sin(x)$                             | $\cos(x)$                                     |
 | $\cos(x)$                             | $-\sin(x)$                                    |
+| $\arcsin(x)$                          | $\frac {1} {\sqrt {1 - x^2}}$                 |
+| $\arccos(x)$                          | $-\frac {1} {\sqrt {1 - x^2}}$                |
+| $\arctan(x)$                          | $\frac {1} {1 + x^2}$                         |
 | ***LOGARITHM & EXPONENTIAL***         | ***LOGARITHM & EXPONENTIAL***                 |
 | $\log_a(x)$                           | $\frac {1} {x\ln(a)}$                         |
 | $\ln(x)$                              | $\frac {1} {x}$                               |
 | $a^x, \quad a > 0$                    | $a^x\ln(a)$                                   |
 | $e^x$                                 | $e^x$                                         |
+
 2. scalar multiplication rule
 $$(c \cdot f(x))' = c \cdot f'(x) \quad \text {for c } \in \mathbb{R}$$
 3. sum and difference rule
@@ -123,3 +129,22 @@ $$f(g(x))' = f'(g(x)) \cdot g'(x)$$
     2. $$F_y = 3y^2 - 6x$$
     3. $$\frac {dy} {dx} = -\frac {3x^2 - 6y} {3y^2 - 6x}$$
     $$\frac {dy} {dx} = \frac {6y - 3x^2} {3y^2 - 6x}$$
+
+#### solve tangent line of an implicit function formula
+
+$$y = \left. \frac {dy} {dx} \right|_{(x_0, y_0)} (x - x_0) + y_0$$
+
+#### general formula to find the derivative of an inverse function
+
+$$\frac {d} {dx} f^{-1}(x) = \frac {1} {f'(f^{-1}(x))}$$
+
+* explanation
+1. using inverse definition
+$$f(f^{-1}(x)) = x$$
+2. differentiate each term
+$$\frac {d} {dx} f(f^{-1}(x)) = \frac {d} {dx} x$$
+$$f'(f^{-1}(x)) \cdot \frac {d} {dx} f^{-1}(x) = 1$$
+$$\frac {d} {dx} f^{-1}(x) = \frac {1} {f'(f^{-1}(x))}$$
+* example: $f: \quad e^x \quad f^{-1}: \quad \ln(x)$
+$$\frac {d} {dx} e^x = \frac {1} {e^{\ln(x)}}$$
+$$= \frac {1} {x}$$
