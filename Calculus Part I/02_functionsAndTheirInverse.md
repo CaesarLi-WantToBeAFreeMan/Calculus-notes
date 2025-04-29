@@ -79,7 +79,7 @@ $$fg(x) = f(x) \cdot g(x)$$
 | functions                     | domains       |
 | :---------------------------: | :-----------: |
 | $f(x) = \sqrt{x}$             | $[0, \infty)$ |
-| $g(x) = x + 2                 | $\mathbb{R}$  |
+| $g(x) = x + 2$                | $\mathbb{R}$  |
 | $fg(x) = (x + 2)\sqrt{x}$     | $[0, \infty)$ |
 | $gf(x) = (x + 2)\sqrt{x}$     | $[0, \infty)$ |
 
