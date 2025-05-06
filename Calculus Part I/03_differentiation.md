@@ -77,6 +77,7 @@ $$y = f(a) + f'(a)(x - a)$$
 | ***TRIGONOMETRIC***                   | ***TRIGONOMETRIC***                           |
 | $\sin(x)$                             | $\cos(x)$                                     |
 | $\cos(x)$                             | $-\sin(x)$                                    |
+| $\tan(x)$                             | $\frac {1} {\cos^2(x)}$                       |
 | $\arcsin(x)$                          | $\frac {1} {\sqrt {1 - x^2}}$                 |
 | $\arccos(x)$                          | $-\frac {1} {\sqrt {1 - x^2}}$                |
 | $\arctan(x)$                          | $\frac {1} {1 + x^2}$                         |

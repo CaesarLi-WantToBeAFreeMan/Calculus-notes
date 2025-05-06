@@ -26,6 +26,7 @@
 | arbitrarily       | ˌɑrbǝˈtrɛrǝlɪ     | 任意地                    |
 | generalization    | ˌdʒɛnǝrǝlaɪˈzеʃǝn | 普遍化；概括               |
 | extensively       | ɪkˈstɛnsɪvlɪ      | 廣大地；廣泛地             |
+| kinetic           | kɪˈnɛtɪk          | 運動引起的；有力的         |
 
 ## Unknown Phrase
 
@@ -164,3 +165,76 @@ $$
         $$T_2(102) = \sqrt {100} + \frac {1} {2 \sqrt {100}}(102 - 100) - \frac {1} {2} \frac {1} {4 \sqrt {100^3}}(102 - 100)^2 = 10.099 \, 5$$
     4. third order
         $$T_3(102) = \sqrt {100} + \frac {1} {2 \sqrt {100}}(102 - 100) - \frac {1} {2} \frac {1} {4 \sqrt {100^3}}(102 - 100)^2 + \frac {1} {6} \frac {3} {8 \sqrt {100^5}}(102 - 100)^3 = 10.099 \, 505$$
+
+### computation rules
+
+1. sum rule
+$$T_n(x) = T_n^g(x) + T_n^h(x)$$
+* example: $f(x) = e^x + \sin(x) \text{, for a = 0}$
+$$
+T_3^{e^x} = \frac {e^0} {0!} + \frac {e^0} {1!} \cdot (x - 0) + \frac {e^0} {2!} \cdot (x - 0)^2 + \frac {e^0} {3!} \cdot (x - 0)^3\\
+= 1 + x + \frac {x^2} {2} + \frac {x^3} {6}\\
+T_3^{\sin(x)} = \frac {\sin(0)} {0!} + \frac {\cos(0)} {1!} - \frac {\sin(0)} {2!} - \frac {\cos(0)} {3!}\\
+= x - \frac {x^3} {6}\\
+T_3 = T_3^{e^x} + T_3^{\sin(x)}\\
+= 1 + x + \frac {x^2} {2} + \frac {x^3} {6} + x - \frac {x^3} {6}\\
+= 1 + 2x + \frac {x^2} {2}
+$$
+2. product rule
+$$T_{n + k}(x) = (x - a)^kT_n^g(x)$$
+* example: $f(x) = (x - 1)e^x \text {, for } a = 1$
+$$
+T_3(x) = (x - 1)T_2^{(x - 1)e^x}\\
+= (x - 1)(e + e(x - 1) + \frac {e} {2}(x - 1)^2)\\
+= e(x - 1) + e(x - 1)^2 + \frac {e} {2}(x - 1)^3
+$$
+3. substitute rule
+$$
+T_{n \cdot k}(x) = \sum_{i = 0}^n \frac {g^{(i)}(0)} {i!}((x - a)^k)^i\\
+= g(0) + g'(0)(x - a)^k + \frac {g''(0)(x - a)^{2k}} {2!} + \dots + \frac {g^{(n)}(0)} {n!}(x - a)^{nk}\\
+\text {for function: } f(x) = g(h(x)) \text { where } h(x) = (x - a)^k
+$$
+* example: $f(x) = \cos(x^2) \text { , for } a = 0$
+$$
+g(u) = \cos(u)\\
+h(x) = x^2\\
+f(x) = g(h(x))\\
+g'(u) = -\sin(u)\\
+g''(u) = -\cos(u)\\
+T_2^g(x) = \frac {g(0)} {0!} + \frac {g'(0)(x - 0)} {1!} + \frac {g''(0)(x - 0)^2} {2!}\\
+= \cos(0) - \sin(0)x - \cos(0)x^2\\
+= 1 + 0 - \frac {x^2} {2}\\
+= 1 - \frac {x^2} {2}\\
+T_4(0) = T_2^g(x^2) = 1 - \frac {(x^2)^2} {2}\\
+= 1 - \frac {x^4} {2}
+$$
+
+### approximation error
+
+* given a function $f$ and its taylor polynomial $T_n$ at the point $a$, the approximation error in $x$ is given by
+$$R_n(x) = \lvert f(x) - T_n(x) \rvert$$
+
+## taylor's inequality
+
+### theorem
+
+* let $f$ be a function and $T_n$ its taylor polynomial at the point $a$, $D$ be an interval that contains the point $a$ and $M$ an upper bound for the function $\lvert f^{(n + 1)}(x) \rvert$ on $D$
+* you need to find the smallest integer that is greater than or equals to $f$ 
+* for example, $M = 3$ for $e$
+$$\lvert f^{(n + 1)} (x) \rvert \leq M \quad \text {holds for all x in D}$$ 
+then for all $x \in D$
+$$\lvert f(x) - T_n(x) \rvert \leq \frac {M} {(n + 1)!} \lvert x - a \rvert^{n + 1}$$
+* example: $f(x) = e^x \quad a = 0$
+$$
+T_n(x) = \sum_{k = 0}^n \frac {f^{(k)}(0)x^k} {k!}\\
+= \sum_{k = 0}^n \frac {x^k} {k!}\\
+T_5(x) = 1 + x + \frac {x^2} {2} + \frac {x^3} {6} + \frac {x^4} {24} + \frac {x^5} {120}\\
+T_5(1) = 1 + 1 + \frac {1} {2} + \frac {1} {6} + \frac {1} {24} + \frac {1} {120}\\
+= \frac {163} {60}\\
+\approx 2.716 \, 666 \, 667\\
+\text {more convenient: upper bound: } M = 3 \quad \text {domain: } D = [0, 1]\\
+\lvert e^x - T_5(x) \rvert \leq \frac {3} {(5 + 1)!} \lvert x - 0 \rvert^{5 + 1}\\
+= \frac {x^6} {120}\\
+\lvert e^1 - T_5(1) \rvert \leq \frac {3} {6!} x^{6}\\
+\approx \frac {1} {240}\\
+$$
