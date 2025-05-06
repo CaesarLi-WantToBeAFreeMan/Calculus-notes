@@ -25,6 +25,7 @@
 | hierarchy         | ˈhaɪǝˌrɑrkɪ       | 等級制度；層級             |
 | arbitrarily       | ˌɑrbǝˈtrɛrǝlɪ     | 任意地                    |
 | generalization    | ˌdʒɛnǝrǝlaɪˈzеʃǝn | 普遍化；概括               |
+| extensively       | ɪkˈstɛnsɪvlɪ      | 廣大地；廣泛地             |
 
 ## Unknown Phrase
 
@@ -112,3 +113,54 @@ $$\eta = \lvert \frac {\sqrt {101} - 10} {\sqrt {101}} \rvert \approx \lvert \fr
         $$\frac {df} {f(x)} = \frac {f'(x)} {f(x)}dx$$
         * example: a cylindrical beam with a height of $8 \, m$, a diameter of $0.6 \pm 0.01 \, m$, and a volume of $V \pm \Delta V \, m^3$
         $$\frac {\Delta x} {x} = \frac {0.01} {0.6} = 1.6%$$
+
+## taylor polynomials
+
+### definition
+
+* the n-th taylor polynomial of $f$ at the point $a$
+$$
+T_n(x) = f(a) + f'(a)(x - a) + \frac {1} {2} f''(a)(x - a)^2 + \dots + \frac {1} {n!} f^{(n)}(x - a)^n\\
+= \sum_{k = 0}^n \frac {1} {k!}f^{(k)}(a)(x - a)^k
+$$
+* example: $\sqrt {4.05}$
+    * $$f(x) = \sqrt{x}$$
+    * $$f'(x) = \frac {1} {2 \sqrt{x}}$$
+    * $$f''(x) = -\frac {1} {4 \sqrt {x^3}}$$
+    $$
+    T_2(x) = \sqrt {4} + \frac {1} {2 \sqrt {4}}(x - 4) + \frac {1} {2} \cdot (-\frac {1} {4 \sqrt{4^3}})(x - 4)^2\\
+    = 2 + \frac {1} {4}(x - 4) - \frac {1} {64}(x - 4)^2\\
+    T_2(4.05) = 2 + \frac {1} {4}(4.05 - 4) - \frac {1} {64}(4.05 - 4)^2\\
+    = \frac {51,519} {25,600}\\
+    \approx 2.012 \, 460 \, 938\\
+    \sqrt {4.05} \approx 2.012 \, 461 \, 180
+    $$
+* the higher the degree of the taylor polynomial you use, the better the approximation
+
+### basic property
+* $$f^{(k)}(a) = T_n^{(k)}(a), \quad \text{for } k \in \{x \in \mathbb{Z} \mid 0 \leq x \leq n\}$$
+
+### choosing the center
+
+* when choosing the center of approximation `a` keep in mind
+    1. we need to know $f^{(n)}$ for sufficiently high `n`
+    2. `a` needs to be close to the point `x` at which we approximate `f(x)`
+* example
+    * we use $f(x) = \sqrt {x}$ to approximate $\sqrt {102}$, and the center is $a = 100$
+
+### order
+
+* `order` refers to the highest power of `x` or the number of derivatives used
+* example: $\sqrt {102}$
+    * $f = \sqrt {x}$
+    * $f'(x) = \frac {1} {2 \sqrt{x}}$
+    * $f''(x) = -\frac {1} {4 \sqrt {x^3}}$
+    * $f^{(3)}(x) = \frac {3} {8 \sqrt {x^5}}$
+    1. zeroth order
+        $$T_0(102) = \sqrt {100} = 10$$
+    2. first order
+        $$T_1(102) = \sqrt {100} + \frac {1} {2 \sqrt {100}}(102 - 100) = 10.1$$
+    3. second order
+        $$T_2(102) = \sqrt {100} + \frac {1} {2 \sqrt {100}}(102 - 100) - \frac {1} {2} \frac {1} {4 \sqrt {100^3}}(102 - 100)^2 = 10.099 \, 5$$
+    4. third order
+        $$T_3(102) = \sqrt {100} + \frac {1} {2 \sqrt {100}}(102 - 100) - \frac {1} {2} \frac {1} {4 \sqrt {100^3}}(102 - 100)^2 + \frac {1} {6} \frac {3} {8 \sqrt {100^5}}(102 - 100)^3 = 10.099 \, 505$$
